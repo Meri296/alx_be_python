@@ -23,8 +23,9 @@ class SimpleCalculator:
             return None
         return a / b
 
-# Unit Tests
+
 class TestSimpleCalculator(unittest.TestCase):
+    """Unit tests for the SimpleCalculator class."""
 
     def setUp(self):
         self.calc = SimpleCalculator()
@@ -49,6 +50,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.divide(3, 2), 1.5)
         self.assertEqual(self.calc.divide(0, 1), 0)
         self.assertIsNone(self.calc.divide(10, 0))  # Test for division by zero
+
 
 if __name__ == '__main__':
     unittest.main()
